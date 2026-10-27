@@ -1,18 +1,14 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Value;
 
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Value
 public class Visitor {
-    private String name;
-    private String surname;
-    private String phone;
-    private boolean subscribed;
-    private List<Book> favoriteBooks;
+    String name;
+    String surname;
+    String phone;
+    boolean subscribed;
+    List<Book> favoriteBooks;
 }

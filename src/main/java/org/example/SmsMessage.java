@@ -1,13 +1,9 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Value;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Value
 public class SmsMessage {
-    private String phoneNumber;
-    private String message;
+    String phoneNumber;
+    String message;
 }

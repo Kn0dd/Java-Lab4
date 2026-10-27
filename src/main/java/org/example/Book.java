@@ -1,16 +1,12 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Value;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Value
 public class Book {
-    private String name;
-    private String author;
-    private int publishingYear;
-    private String isbn;
-    private String publisher;
+    String name;
+    String author;
+    int publishingYear;
+    String isbn;
+    String publisher;
 }
