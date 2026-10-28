@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Task2 {
-    static void main() {
+    public static void main(String[] args) {
         List<Visitor> visitors = new ArrayList<>(JsonReader.loadVisitors());
         Set<Book> uniqueBooks = visitors.stream()
                 .flatMap(v -> v.getFavoriteBooks().stream())

@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Task6 {
-    static void main() {
+    public static void main(String[] args) {
         List<Visitor> visitors = new ArrayList<>(JsonReader.loadVisitors());
         double averageBooks = visitors.stream()
                 .mapToInt(v -> v.getFavoriteBooks().size())

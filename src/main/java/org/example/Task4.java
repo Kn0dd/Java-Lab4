@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Task4 {
-    static void main() {
+    public static void main(String[] args) {
         List<Visitor> visitors = new ArrayList<>(JsonReader.loadVisitors());
         boolean hasAuthor = visitors.stream()
                 .flatMap(v -> v.getFavoriteBooks().stream())
